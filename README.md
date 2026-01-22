@@ -2,7 +2,7 @@
 
 ## Install-LinuxPSUAgent.sh
 > This script installs the PSUAgent as a service.  
-> The service runs as the service user with minimal permissions.
+> The service runs as the service user with minimal permissions.  
 > [Official documentation for the agent](https://docs.powershelluniversal.com/config/agent#agent.json)
 
 ### Usage:
