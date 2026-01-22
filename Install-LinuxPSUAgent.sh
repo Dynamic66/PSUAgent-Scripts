@@ -111,6 +111,9 @@ else
     echo "Service file already exists at ${psu_service_file}"
 fi
 
+echo "Enabling ${psu_agent_service}"
+sudo systemctl enable "${psu_agent_service}"
+
 echo "Starting ${psu_agent_service}"
-sudo systemctl start "$psu_agent_service"
-sudo systemctl status "$psu_agent_service" --no-pager
+sudo systemctl start "${psu_agent_service}"
+sudo systemctl status "${psu_agent_service}" --no-pager
