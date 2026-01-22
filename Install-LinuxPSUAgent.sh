@@ -11,17 +11,17 @@
 # ----
 
 # Agent connection settings
-agent_hub="linuxHub"                 # eventhubs needs to exist befor running this script
-agent_script_path="agentScript.ps1"  # not created by this script
-agent_url="http://localhost:5000"
-agent_description="testAgent"
-agent_token=""
+agent_hub="linuxHub"                 # Required, eventhub needs to be created befor running this script
+agent_url="http://localhost:5000"    # Required
+agent_script_path=""                 # optional
+agent_description=""                 # optional
+agent_token=""                       # optional
 
+psu_version="5.6.13"                 # Change to current version
+psu_arch="x64"                       # Change to desired architecture
 
 
 # Download configuration
-psu_version="5.6.13"          # Change to current version
-psu_arch="x64"                # Change to desired architecture
 psu_file="Universal.linux-${psu_arch}.${psu_version}.zip"
 psu_url="https://imsreleases.blob.core.windows.net/universal/production/${psu_version}/${psu_file}"
 
